@@ -82,6 +82,8 @@ public class VolleyActivity extends AppCompatActivity {
 
     private  void jsonParse(){
         mQueue = Volley.newRequestQueue(VolleyActivity.this);
+        
+        //Url is depricated... Please change the url for api
         String url = "http://15.207.150.183/API/index.php?p=videoTestAPI";
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
